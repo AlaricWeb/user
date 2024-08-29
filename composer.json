@@ -1,0 +1,42 @@
+{
+    "name": "alaric/user",
+    "authors": [
+        {
+            "name": "alaric",
+            "email": "alaric851@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "alaric\\User\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Vendor\\Package\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^7.4",
+        "thinkphp/framework": "^6.0"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "php scripts/install.php"
+        ],
+        "post-update-cmd": [
+            "php scripts/install.php"
+        ]
+    },
+    "extra": {
+        "thinkphp": {
+            "plugin": true
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.6"
+    },
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
